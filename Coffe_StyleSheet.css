@@ -1,0 +1,111 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f8ebe6, #f3e5e1, #eee0dc, #eae0da, #e5e0d8);
+    color: #3e2723;
+    text-align: center;
+}
+
+header {
+    background-color: #795548;
+    padding: 20px;
+    border-radius: 0 0 30px 30px;
+
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    padding-top: 10px;
+    color: #f3e5e1;
+}
+
+
+nav {
+    text-align: center;
+    padding: 10px;
+    background: #d7ccc8;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+nav a {
+    color: #5d4037;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #3e2723;
+}
+
+section {
+    padding: 20px;
+    background: #f3e5e1;
+    border-radius: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #795548;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+form {
+    text-align: center;
+}
+
+input[type="text"],
+textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #5d4037;
+    background-color: #ffffff;
+    color: #3e2723;
+}
+
+input[type="submit"] {
+    background-color: #ff7043;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+input[type="submit"]:hover {
+    background-color: #e64a19;
+
+}
+
+.coffee-name {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #ffe0b2;
+    display: inline-block;
+    color: #3e2723;
+    margin-top: 5px;
+}
+
+.coffee-img {
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+section[id="about"] p {
+    font-family: "Exo" , sans-serif;
+    font-size:medium;
+    font-style: italic;
+}
