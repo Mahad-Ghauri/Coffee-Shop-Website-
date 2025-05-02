@@ -19,12 +19,14 @@
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
                 <a href="#contact">Contact</a>
             </div>
         </nav>
         <div class="hero">
             <h1>Welcome to Espresso Elegance</h1>
             <p>Where every cup tells a story</p>
+            <a href="#menu" class="hero-btn">Explore Our Menu</a>
         </div>
     </header>
 
@@ -35,25 +37,138 @@
                 <p>Welcome to Espresso Elegance! We're passionate about providing you with the finest coffee experience. From freshly brewed coffee to delicious pastries, we've got everything you need to fuel your day.</p>
                 <p>Our expert baristas craft each cup with precision and care, ensuring every sip is a moment of pure delight.</p>
                 <p>Whether you're looking for a quiet place to work or a cozy spot to catch up with friends, our café is the perfect destination.</p>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-coffee"></i>
+                        <h3>Premium Beans</h3>
+                        <p>Sourced from sustainable farms around the world</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-user-friends"></i>
+                        <h3>Expert Baristas</h3>
+                        <p>Trained to craft the perfect cup every time</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-wifi"></i>
+                        <h3>Free Wi-Fi</h3>
+                        <p>Stay connected while you enjoy your coffee</p>
+                    </div>
+                </div>
             </div>
             <div class="about-image">
-                <img src="coffee1.jpeg" alt="Our Coffee Shop">
+                <img src="https://images.pexels.com/photos/302896/pexels-photo-302896.jpeg" alt="Our Coffee Shop">
             </div>
         </div>
     </section>
 
     <section id="menu" class="section">
         <h2>Our Menu</h2>
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="hot">Hot Coffee</button>
+            <button class="category-btn" data-category="cold">Cold Coffee</button>
+            <button class="category-btn" data-category="pastries">Pastries</button>
+        </div>
         <div class="menu-grid">
-            <div class="menu-item">
-                <img src="coffee1.jpeg" alt="Cappuccino" class="coffee-img">
+            <div class="menu-item" data-category="hot">
+                <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg" alt="Cappuccino" class="coffee-img">
                 <div class="coffee-name">Cappuccino</div>
+                <p class="coffee-desc">Espresso with steamed milk and a layer of foamed milk</p>
                 <p class="price">$4.50</p>
             </div>
-            <div class="menu-item">
-                <img src="coffee2.jpeg" alt="Cold Coffee" class="coffee-img">
-                <div class="coffee-name">Cold Coffee</div>
+            <div class="menu-item" data-category="cold">
+                <img src="https://images.pexels.com/photos/2638019/pexels-photo-2638019.jpeg" alt="Cold Coffee" class="coffee-img">
+                <div class="coffee-name">Iced Latte</div>
+                <p class="coffee-desc">Espresso with cold milk and ice</p>
                 <p class="price">$5.00</p>
+            </div>
+            <div class="menu-item" data-category="hot">
+                <img src="https://images.pexels.com/photos/585753/pexels-photo-585753.jpeg" alt="Espresso" class="coffee-img">
+                <div class="coffee-name">Espresso</div>
+                <p class="coffee-desc">Strong black coffee made by forcing steam through ground coffee beans</p>
+                <p class="price">$3.50</p>
+            </div>
+            <div class="menu-item" data-category="cold">
+                <img src="https://images.pexels.com/photos/1193335/pexels-photo-1193335.jpeg" alt="Frappuccino" class="coffee-img">
+                <div class="coffee-name">Frappuccino</div>
+                <p class="coffee-desc">Blended ice coffee topped with whipped cream</p>
+                <p class="price">$6.00</p>
+            </div>
+            <div class="menu-item" data-category="pastries">
+                <img src="https://images.pexels.com/photos/2693448/pexels-photo-2693448.jpeg" alt="Croissant" class="coffee-img">
+                <div class="coffee-name">Butter Croissant</div>
+                <p class="coffee-desc">Flaky, buttery French pastry</p>
+                <p class="price">$3.75</p>
+            </div>
+            <div class="menu-item" data-category="pastries">
+                <img src="https://images.pexels.com/photos/4686958/pexels-photo-4686958.jpeg" alt="Cinnamon Roll" class="coffee-img">
+                <div class="coffee-name">Cinnamon Roll</div>
+                <p class="coffee-desc">Sweet roll with cinnamon-sugar filling and vanilla glaze</p>
+                <p class="price">$4.25</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <h2>Coffee Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/773958/pexels-photo-773958.jpeg" alt="Coffee Art">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/326682/pexels-photo-326682.jpeg" alt="Coffee Shop">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/1002740/pexels-photo-1002740.jpeg" alt="Coffee Brewing">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg" alt="Coffee Beans">
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials section">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <div class="testimonial-text">
+                    <i class="fas fa-quote-left"></i>
+                    <p>The best cappuccino I've ever had! The ambiance is perfect for both work and relaxation.</p>
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Customer">
+                    <div>
+                        <h4>Sarah Johnson</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-text">
+                    <i class="fas fa-quote-left"></i>
+                    <p>I come here every morning for my coffee fix. The staff is friendly and the pastries are amazing!</p>
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer">
+                    <div>
+                        <h4>Michael Roberts</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -61,6 +176,29 @@
     <section id="contact" class="section">
         <h2>Contact Us</h2>
         <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Address</h3>
+                        <p>West Shahlimar Coffee Lane, Bosan Road Multan</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>(+92) 310-4698213</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>info@espressoelegance.com</p>
+                    </div>
+                </div>
+            </div>
             <form id="contactForm" class="contact-form">
                 <div class="form-group">
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -77,34 +215,101 @@
                 </button>
             </form>
         </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0594330205233!2d-122.41941638468154!3d37.77492997975903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ2JzI5LjgiTiAxMjLCsDI1JzA1LjAiVw!5e0!3m2!1sen!2sus!4v1623856726045!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </section>
 
     <footer>
         <div class="footer-content">
             <div class="footer-section">
                 <h3>Espresso Elegance</h3>
-                <p>123 Coffee Lane, Brewtown, CA 12345</p>
-                <p>Phone: (123) 456-7890</p>
+                <p>West Shahlimar  Coffee Lane, Bosan Road Multan</p>
+                <p>Phone: (+92) 310-4569823</p>
+                <p>Email: info@espressoelegance.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 7am - 9pm</p>
+                <p>Saturday - Sunday: 8am - 10pm</p>
+                <p>Holidays: 9am - 8pm</p>
             </div>
             <div class="footer-section">
                 <h3>Follow Us</h3>
                 <div class="social-links">
-                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest-p"></i></a>
                 </div>
-            </div>
-            <div class="footer-section">
-                <h3>Hours</h3>
-                <p>Monday - Friday: 7am - 9pm</p>
-                <p>Saturday - Sunday: 8am - 10pm</p>
+                <div class="newsletter">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2024 Espresso Elegance. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Menu Category Filter
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const menuItems = document.querySelectorAll('.menu-item');
+            
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const category = this.getAttribute('data-category');
+                    
+                    // Show all items if 'all' category is selected
+                    if (category === 'all') {
+                        menuItems.forEach(item => {
+                            item.style.display = 'block';
+                        });
+                    } else {
+                        // Show items that match the selected category
+                        menuItems.forEach(item => {
+                            if (item.getAttribute('data-category') === category) {
+                                item.style.display = 'block';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        });
+                    }
+                });
+            });
+            
+            // Form submission handler
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Thank you for your message! We will get back to you soon.');
+                    contactForm.reset();
+                });
+            }
+            
+            // Newsletter subscription handler
+            const newsletterForm = document.querySelector('.newsletter-form');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Thank you for subscribing to our newsletter!');
+                    newsletterForm.reset();
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
-```
