@@ -1,111 +1,272 @@
-body {
-    font-family: 'Times New Roman', Times, serif;
+:root {
+    --primary-color: #6F4E37;
+    --secondary-color: #B58D67;
+    --accent-color: #FF7043;
+    --text-color: #2C1810;
+    --light-bg: #F8F4F1;
+    --white: #FFFFFF;
+}
+
+* {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #f8ebe6, #f3e5e1, #eee0dc, #eae0da, #e5e0d8);
-    color: #3e2723;
-    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
 header {
-    background-color: #795548;
-    padding: 20px;
-    border-radius: 0 0 30px 30px;
-
-}
-
-h1 {
-    margin: 0;
-    font-size: 2.5em;
-    padding-top: 10px;
-    color: #f3e5e1;
-}
-
-
-nav {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('coffee1.jpeg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 10px;
-    background: #d7ccc8;
-    border-radius: 30px;
-    margin-top: 20px;
+    padding: 0 20px;
 }
 
-nav a {
-    color: #5d4037;
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.nav-links a {
+    color: var(--text-color);
     text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s;
+    margin: 0 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-nav a:hover {
-    color: #3e2723;
+.nav-links a:hover {
+    color: var(--accent-color);
 }
 
-section {
-    padding: 20px;
-    background: #f3e5e1;
-    border-radius: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #795548;
-    border-radius: 30px 30px 0 0;
-    margin-top: 20px;
-    color: #ffffff;
-}
-
-form {
+.hero {
+    color: var(--white);
     text-align: center;
 }
 
-input[type="text"],
-textarea {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    box-sizing: border-box;
-    border-radius: 10px;
-    border: 2px solid #5d4037;
-    background-color: #ffffff;
-    color: #3e2723;
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-input[type="submit"] {
-    background-color: #ff7043;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 10px;
-
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 
-input[type="submit"]:hover {
-    background-color: #e64a19;
-
+.section {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.coffee-name {
-    border-radius: 20px;
-    padding: 10px;
-    background-color: #ffe0b2;
-    display: inline-block;
-    color: #3e2723;
-    margin-top: 5px;
+.section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.menu-item {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
 }
 
 .coffee-img {
-    border-radius: 30px;
-    margin-bottom: 10px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 }
 
-section[id="about"] p {
-    font-family: "Exo" , sans-serif;
-    font-size:medium;
-    font-style: italic;
+.coffee-name {
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.price {
+    padding: 0 1rem 1rem;
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+footer {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 3rem 2rem 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: var(--white);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-group {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .main-nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .nav-links {
+        margin-top: 1rem;
+    }
 }

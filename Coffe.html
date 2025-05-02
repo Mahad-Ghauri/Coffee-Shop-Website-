@@ -6,76 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="Coffe_StyleSheet.css">
     <title>Espresso Elegance</title>
-
 </head>
 
 <body>
     <header>
-        <h1>Welcome to Espresso Elegance</h1>
+        <nav class="main-nav">
+            <div class="logo">Espresso Elegance</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to Espresso Elegance</h1>
+            <p>Where every cup tells a story</p>
+        </div>
     </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#menu">Menu</a
-        <a href="#contact">Contact</>
-        
-    </nav>
-    <section id="about">
-        <h2 style="color: #ff7043;">About Us</h2>
-        <p>Welcome to Espresso Elegance! Providing you with the finest coffee experience. From
-            freshly brewed coffee to delicious pastries, we've got everything you need to fuel your day.</p>
-        <p>Our baristas are passionate about coffee and are here to serve you the perfect cup every time.</p>
-        <p>Whether you're looking for a quiet place to work or a cozy spot to catch up with friends, our café is the perfect destination.</p>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Welcome to Espresso Elegance! We're passionate about providing you with the finest coffee experience. From freshly brewed coffee to delicious pastries, we've got everything you need to fuel your day.</p>
+                <p>Our expert baristas craft each cup with precision and care, ensuring every sip is a moment of pure delight.</p>
+                <p>Whether you're looking for a quiet place to work or a cozy spot to catch up with friends, our café is the perfect destination.</p>
+            </div>
+            <div class="about-image">
+                <img src="coffee1.jpeg" alt="Our Coffee Shop">
+            </div>
+        </div>
     </section>
-    <section id="menu">
+
+    <section id="menu" class="section">
         <h2>Our Menu</h2>
-        <div>
-            <img src="coffee1.jpeg" alt="Coffee 1" class="coffee-img">
-            <center>
-                <div class="coffee-name">Cappacuino</div>
-            </center>
-            <br>
-        </div>
-        <div>
-            <img src="coffee2.jpeg" alt="Coffee 2" class="coffee-img">
-            <center>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="coffee1.jpeg" alt="Cappuccino" class="coffee-img">
+                <div class="coffee-name">Cappuccino</div>
+                <p class="price">$4.50</p>
+            </div>
+            <div class="menu-item">
+                <img src="coffee2.jpeg" alt="Cold Coffee" class="coffee-img">
                 <div class="coffee-name">Cold Coffee</div>
-            </center>
+                <p class="price">$5.00</p>
+            </div>
         </div>
-        </br>
-
     </section>
 
-    <section id="contact">
+    <section id="contact" class="section">
         <h2>Contact Us</h2>
-        <form id="contactForm">
-            <input type="text" id="name" name="name" placeholder="Your Name">
-            <input type="email" id="email" name="email" placeholder="Your Email">
-            <input type="text" id="subject" name="subject" placeholder="Subject">
-            <input type="text" id="phone" name="phone" placeholder="Your Phone Number">
-            <input type="text" id="location" name="location" placeholder="Your Location">
-            
-            <br>
-            <textarea id="message" name="message" placeholder="Your Message"></textarea>
-            <br>
-            <input type="submit" value="Send Message">
-        </form>
+        <div class="contact-container">
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+                </div>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
     </section>
-    <footer>
-        <p>&copy; 2024 Coffee Stop. All rights and terms reserved.</p>
-        <p>Follow us on social media:</p>
-        <a href="https://www.facebook.com" target="_blank">Facebook</a> |
-        <a href="https://www.instagram.com" target="_blank">Instagram</a> |
-        <a href="https://www.twitter.com" target="_blank">Twitter</a>
-        <p>123 Coffee Lane, Brewtown, CA 12345</p>
-        <p>Phone: (123) 456-7890</p>
-        
-    </footer>
 
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Espresso Elegance</h3>
+                <p>123 Coffee Lane, Brewtown, CA 12345</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Monday - Friday: 7am - 9pm</p>
+                <p>Saturday - Sunday: 8am - 10pm</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Espresso Elegance. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
